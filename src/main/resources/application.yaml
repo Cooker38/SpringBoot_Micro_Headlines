@@ -1,0 +1,25 @@
+jwt:
+  token:
+    token-expiration: 120
+    token-sign-key: headline123456
+
+server:
+  port: 8080
+  servlet:
+    context-path: /
+spring:
+  datasource:
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/sm_db
+      username: root
+      password: 123456
+mybatis-plus:
+  configuration:
+    arg-name-based-constructor-auto-mapping: true
+  global-config:
+    db-config:
+      logic-delete-field: isDeleted  #全局逻辑删除
+      id-type: auto #主键策略自增长
+      table-prefix: news_ # 设置表的前缀
+  type-aliases-package: com.atguigu.Pojo
