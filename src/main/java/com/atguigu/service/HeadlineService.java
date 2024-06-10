@@ -1,6 +1,9 @@
 package com.atguigu.service;
 
 import com.atguigu.Pojo.Headline;
+import com.atguigu.Pojo.Vo.PortalVo;
+import com.atguigu.Utils.Result;
+import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**
@@ -10,4 +13,13 @@ import com.baomidou.mybatisplus.extension.service.IService;
 */
 public interface HeadlineService extends IService<Headline> {
 
+    Result findNewPage(PortalVo portalVo);
+
+    Result showHeadlineDetail(Integer hid);
+
+    Result publish(String token, Headline headline);
+
+    Result findHeadlineByHid(Integer hid);
+
+    Result update(Headline headline);
 }

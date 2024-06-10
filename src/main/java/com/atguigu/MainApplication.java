@@ -9,6 +9,7 @@ import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
 /**
  * ClassName: MainApplication
@@ -19,6 +20,7 @@ import org.springframework.context.annotation.Bean;
  * @Create 2024/6/8 20:56
  * @Version 1.0
  */
+
 @SpringBootApplication
 @MapperScan("com.atguigu.mapper")
 public class MainApplication {

@@ -17,7 +17,7 @@ public class Type implements Serializable {
     private String tname;
     @Version
     private Integer version;
-
+    @TableLogic
     private Integer isDeleted;
 
     private static final long serialVersionUID = 1L;

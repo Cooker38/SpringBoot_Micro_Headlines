@@ -30,7 +30,7 @@ public class Headline implements Serializable {
     private Date updateTime;
     @Version
     private Integer version;
-
+    @TableLogic
     private Integer isDeleted;
 
     private static final long serialVersionUID = 1L;

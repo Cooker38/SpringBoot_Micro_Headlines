@@ -21,7 +21,7 @@ public class User implements Serializable {
     private String nickName;
     @Version
     private Integer version;
-
+    @TableLogic
     private Integer isDeleted;
 
     private static final long serialVersionUID = 1L;
